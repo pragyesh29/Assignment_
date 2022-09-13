@@ -31,6 +31,10 @@ int main(){
     string s;
     cout << "Enter number : ";
     cin >> s;
+    if(s.length() != 4){
+        cout << "Invalid Input";
+        return 0 ;
+    }
     string t = encrypt(s);
     cout << "Encrypted Integer : " << t << '\n';
     cout << "Decrypted Integer : " << decrypt(t);
