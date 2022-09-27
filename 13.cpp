@@ -19,6 +19,7 @@ bool isPrime(int n){
 
 int main(){
     int l = 100, r = 200;
+    cout << "primes between " << l << "and" << r << "are follows : \n";
     for(int i = l; i <= r; i++){
         if(isPrime(i)) cout << i << " ";
     }
