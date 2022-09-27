@@ -15,7 +15,9 @@ int recursiveFact(int n){
 }
 
 int main(){
-    int n; cin >> n;
+    int n;
+    cout << "Enter number : ";
+    cin >> n;
     if(n < 0){
         cout << "Invalid Input";
         return 0;
