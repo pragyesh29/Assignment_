@@ -19,17 +19,17 @@ int main(){
     cout << "Enter power x : ";
     cin >> x;
     
-    long long res = 0, curr = a;
+    long long res = 1, curr = a;
     string s = to_binary(x);
     for(int i = 0; i < s.length(); i++){
         if(i == 0){
             if(s[i] == '1') res = a;
-            else res = 1;
         }else{
             curr *= curr;
             if(s[i] == '1') res *= curr;
         }
     }
     cout << "pow(a, x) = " << res;
+    cout << to_binary(10);
     return 0;
 }
